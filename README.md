@@ -1,37 +1,44 @@
-# sql-challenge
+# Employee Database Analysis with SQL
 
-It’s been two weeks since you were hired as a new data engineer at Pewlett Hackard (a fictional company). Your first major task is to do a research project about people whom the company employed during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files.
+## Introduction
 
-For this project, you’ll design the tables to hold the data from the CSV files, import the CSV files into a SQL database, and then answer questions about the data. That is, you’ll perform data modeling, data engineering, and data analysis, respectively.
+Welcome to the Pewlett Hackard employee database analysis project. As a data engineer, I've been tasked with working on a research project related to employees who worked at the company during the 1980s and 1990s. The project involves designing tables to store data from six CSV files, importing this data into a SQL database, and performing various data analysis tasks.
 
-# Data Modeling
-Inspect the CSV files, and then sketch an Entity Relationship Diagram of the tables. 
+## Data Modeling
 
-# Data Engineering
-Use the provided information to create a table schema for each of the six CSV files. Be sure to do the following:
+I began by inspecting the provided CSV files and sketching an Entity Relationship Diagram (ERD) of the tables. This ERD helped me visualize the relationships between different data components. Tools like QuickDBD were used to create the ERD, ensuring an organized structure for the database.
 
-Remember to specify the data types, primary keys, foreign keys, and other constraints.
+## Data Engineering
 
-For the primary keys, verify that the column is unique. Otherwise, create a composite keyLinks to an external site., which takes two primary keys to uniquely identify a row.
+In the data engineering phase, I designed the table schema for each of the six CSV files. Several important considerations were kept in mind:
 
-Be sure to create the tables in the correct order to handle the foreign keys.
+-   Defining appropriate data types for each column
+-   Specifying primary keys and verifying their uniqueness
+-   Managing foreign keys to establish relationships between tables
+-   Creating tables in the correct order to handle foreign key dependencies
 
-Import each CSV file into its corresponding SQL table.
+I carefully imported the data from the CSV files into their corresponding SQL tables, ensuring data integrity and maintaining data consistency.
 
-# Data Analysis
-List the employee number, last name, first name, sex, and salary of each employee.
+## Data Analysis
 
-List the first name, last name, and hire date for the employees who were hired in 1986.
+The final part of the project involved answering various data analysis questions using SQL queries. Some of the key questions and insights include:
 
-List the manager of each department along with their department number, department name, employee number, last name, and first name.
+1.  Listing employee numbers, last names, first names, sexes, and salaries of all employees.
+2.  Identifying employees hired in 1986 by listing their first names, last names, and hire dates.
+3.  Listing department managers along with their department number, department name, employee number, last name, and first name.
+4.  Associating department numbers with employee details, including employee number, last name, first name, and department name.
+5.  Identifying employees named Hercules with last names starting with the letter B, listing their first names, last names, and sexes.
+6.  Listing all employees in the Sales department, including their employee numbers, last names, and first names.
+7.  Listing employees in the Sales and Development departments, including their employee numbers, last names, first names, and department names.
+8.  Displaying the frequency counts, in descending order, of all employee last names to identify shared last names among employees.
 
-List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+This project provided valuable insights into the employee database at Pewlett Hackard during the 1980s and 1990s, showcasing the power of SQL for data analysis and database management.
 
-List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+## Conclusion
 
-List each employee in the Sales department, including their employee number, last name, and first name.
+The successful completion of this project demonstrates the importance of data engineering and analysis in handling large datasets. It also highlights the significance of well-structured databases and effective SQL querying techniques for extracting meaningful insights from data.
 
-List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+### References
+Data generated by  [Mockaroo, LLCLinks to an external site.](https://mockaroo.com/), (2022). Realistic Data Genera
 
-List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
 

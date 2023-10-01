@@ -1,10 +1,16 @@
-SELECT * FROM departments
+-- Confirm if all tables were imported correctly.
 
 SELECT * FROM departments
 
-SELECT * FROM departments
+SELECT * FROM dept_manager
 
-SELECT * FROM departments
+SELECT * FROM dept_emp
+
+SELECT * FROM salaries
+
+SELECT * FROM titles
+
+SELECT * FROM employees
 
 -- Query 1: List the employee number, last name, first name, sex, and salary of each employee.
 SELECT s.emp_no, last_name, first_name, sex, salary
